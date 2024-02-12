@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.codepen-wrapper2 {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9DCD6;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://assets.codepen.io/4927073/Group2.png), url(https://assets.codepen.io/4927073/Background6.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.codepen-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9DCD6;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://assets.codepen.io/4927073/Group2.png), url(https://assets.codepen.io/4927073/Background6.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.book {
+  height: 40rem;
+  width: 30rem;
+  font-size: 1.4rem;
+  box-shadow: 1rem 2rem 3rem rgba(#000, .25);
+  text-align: center;
+  position: relative;
+  color: #484e4a;
+}
+
+.valentine {
+  font-family: 'Love Light', cursive;
+  font-size: 36px;
+  color: #BF3131;
+  font-weight: 600;
+}
+ 
+  .page {
+    width: 100%;
+    height: 40rem;
+    perspective: 1500px;
+    
+    &__1 { // Front of first page
+      background-color: #E6A4B4;
+      color: #294B29;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; // Allows to add padding and margin to rear pseudo element
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      transition: all 1s .3s ;
+      transform-origin: 0 50%;
+      z-index: 2;
+      
+      
+      &::after { // Back of first page
+        content: "To the love of my life.";
+        color: #eff0eb;
+        position: absolute;
+        padding-top: 10.5rem;
+        top: 0;
+        left: 0;
+        background-color: #424B54;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transform: rotateY(180deg);
+        transition: all .3s .5s;
+        font-size: 32px;
+      }
+    }
+    
+    &__2 { // Front of second page
+      background-color: #BAA898;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      display: grid;
+    }
+    
+    &:hover &__1 {
+      transform: rotateY(-180deg);
+      box-shadow: 1.5rem 2rem 3rem rgba(#000, .25);
+      
+      &::after { // Back of first page hover
+        opacity: 1;
+      }
+      
+    }
+  
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+
+ button {
+
+   margin: 10px;
+
+   height: 50px;
+
+   width: 70px;
+
+   font-size: 16px;
+
+   border: none;
+
+   border-radius: 10px;
+
+   cursor: pointer;
+
+   transition: .4s ease-in-out;
+
+ }
+
+ #yes:active {
+
+   background: #632D5D;
+
+ }
+
+ #no:active {
+
+   background: #310E25;
+
+ }
+
+ .containar {
+
+   width: 100%;
+
+   height: auto;
+
+   justify-content: center;
+
+   display: flex;
+
+   align-items: center;
+
+ }
+
+ #yes {
+
+   background-color: #94418C;
+
+   color: white;
+
+ }
+
+ #no {
+
+   background-color: #4B1639;
+
+   color: white;
+
+ }
+
+ #yay {
+
+   display: none;
+
+   position: absolute;
+
+   margin-top: -100px;
+
+   font-weight: 900;
+
+   font-size: 20px;
+
+ }
+
+ #yay1 {
+
+   display: none;
+
+   width: 200px;
+
+   position: absolute;
+
+   margin-top: -300px;
+
+ }
+
+ #can1 {
+
+   width: 200px;
+
+   position: absolute;
+
+   margin-top: -300px;
+
+   display: none;
+
+ }
+
+ #can2 {
+    display: block;
+    width: 200px;
+    position: absolute;
+    margin-top: -300px;
+ }
+
+ #can {
+
+   position: absolute;
+
+   margin-top: -100px;
+
+   font-weight: 600;
+
+   display: block;
+
+ }
+
+img:active {
+
+	transform: scale3d(1.2,1.2,1.2);
+
+}
+
+img{
+  transition: .4s ease-in-out;
+}
+
+.heart-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ANIMATION */
+@keyframes color-change {
+  0% {
+    background: #F2BED1;
+  }
+  25% {
+    background: #FDCEDF;
+  }
+  50% {
+    background: #F8E8EE;
+  }
+  75% {
+    background: #FDCEDF;
+  }
+  100% {
+    background: #F2BED1;
+  }
+}
+
+/* HEART */
+
+.heart {
+  background-color: #DC143C;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 50px;
+  height: 50px;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #DC143C;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+.heart, .heart:before, .heart:after {
+  animation-name: color-change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+/* HEART 2 */
+.heart-2, .heart-2:before, .heart-2:after {
+  animation-delay: 2s;
+}
+/* HEART 3 */
+.heart-3, .heart-3:before, .heart-3:after {
+  animation-delay: 4s;
+}

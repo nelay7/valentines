@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Argelie</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</head>
+<body>
+
+
+    
+    <div class="codepen-wrapper">
+        <img id="before" style="width:600px; position: absolute; left: 500px;" src="before.png" alt="">
+        <img id="after" style="width:800px; position: absolute; left: 400px; display: none;" src="polaroid_after.png" alt="">
+        <audio class ="audio" id="myAudio">
+            <source src="song.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+          <audio class ="audio" id="myAudio2">
+            <source src="sad.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+        <div class="container0">
+            <div class="heart-container">
+              <div class="heart heart-1"></div>
+            </div>
+            <div class="heart-container">
+              <div class="heart heart-2"></div>
+            </div>
+            <div class="heart-container">
+              <div class="heart heart-3"></div>
+            </div>
+          </div>
+        <div class="book">
+          <div class="page">
+            <div class="page__1">
+              <p class="valentine">Valentine's 2024<br><br><br><br><br><br></p>
+              <p style="padding: 100px 0 0 0;">From: Nicolas Buu<br>
+                To: Argelie Palattao ❤️</p>
+            </div>
+            <div class="page__2">
+              <p style="font-size: 32px;"><br>I think you're really pretty..<br></p>
+              <div class="containar">
+
+                <img id="yay1" src="yes.png" style="padding: 0 0 30px 0;">
+            
+                <p id="yay">Yehey! <br>
+                    Open the drawer for a surprise!</p>
+            
+                <img id="can1" src="no.png">
+
+                <img id="can2" src="can.png">
+            
+                <p id="can">will you be my valentine?</p>
+            
+                <button id="yes" onclick="playAudio()">Yes</button>
+            
+                <button id="no" onclick="pauseAudio()">No</button>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+
+
+</body>
+</html>
