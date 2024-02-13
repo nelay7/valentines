@@ -14,6 +14,8 @@ const can2 = document.getElementById("can2")
 
 const after = document.getElementById("after")
 
+
+
 noBtn.addEventListener("click", () => {
 
   yesBtn.style.width = `${yesBtn.offsetWidth + 40}px`;
@@ -65,4 +67,5 @@ function pauseAudio() {
     audio.pause();
     audio2.play();
 }
+
 
