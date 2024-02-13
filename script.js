@@ -14,6 +14,8 @@ const can2 = document.getElementById("can2")
 
 const after = document.getElementById("after")
 
+const before = document.getElementById("before")
+
 
 
 noBtn.addEventListener("click", () => {
@@ -51,6 +53,8 @@ yesBtn.addEventListener("click", () => {
   yesBtn.style.height = `50px`;
 
   after.style.display = "block";
+
+  before.style.display = "none";
 
 });
 
